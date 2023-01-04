@@ -1,0 +1,26 @@
+
+###
+GET  http://localhost:3000/user
+
+###
+GET  http://localhost:3000/user/1
+
+###
+POST  http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample"
+}
+
+###
+PUT  http://localhost:3000/user/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample test"
+}
+
+###
+DELETE   http://localhost:3000/user/1 HTTP/1.1
+content-type: application/json
